@@ -11,7 +11,7 @@ document.getElementById("back-to-top").onclick = function() {
 }
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    fixed.style.boxShadow = "0 0 6px #2c1818";
+    fixed.style.boxShadow = "0 0 3px #2c1818";
     mybutton.style.display = "block";
   } else {
     mybutton.style.display = "none";

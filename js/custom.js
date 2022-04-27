@@ -48,21 +48,22 @@ function topFunction() {
 //   document.querySelector('.overlay_menu').style.display="none";
 // })
 
-// function ChooseStepPayTut(){
-//   let queryC = document.querySelector('.home-pay-tutorial').querySelectorAll('.tut-step'); 
-//   let countStep = queryC.length;
-//   let arrayClassName = [];
-//   for (let i = 0; i < countStep; i++){
-//     arrayClassName.push(queryC[i].className);
-//   }
-//   let resultIndex = arrayClassName.indexOf('tut-step active');
-//   console.log(resultIndex);
 
-//   for(let i = 0; i < countStep; i++){
-//     document.querySelector('.img-step').querySelectorAll('img')[i].className = "tut-step";
-//   }
-// }
-// document.querySelector('.circle-step').addEventListener('click', {
+$(document).ready(function(){
+  $('.tut-step').click(function(){
+      index = $(this).index();
+      $('.tut-step').removeClass('active');
+      $(this).addClass('active');
+      console.log(index);
+      $('.img-step img').removeClass('active');
+      document.querySelectorAll('.img-step img')[index].className = 'active';
+  })
+
+});
+  
+
+// function myFunction(event) { 
+//   alert(event.target.index());
 //   ChooseStepPayTut();
-// });
+// }
 

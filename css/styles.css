@@ -364,7 +364,7 @@ main {
       .home-service-hot .slider-service .service-item .s-i-frame img {
         width: 100%;
         height: 100%;
-        object-fit: cover; }
+        object-fit: contain; }
       .home-service-hot .slider-service .service-item .s-i-frame h5 {
         position: absolute;
         text-align: center;
@@ -675,6 +675,9 @@ footer {
       max-width: 100%;
       margin-bottom: 40px; } }
 @media screen and (max-width: 576px) {
+  .step {
+    align-items: start !important; }
+
   iframe {
     max-height: 200px !important; }
 

@@ -61,9 +61,3 @@ $(document).ready(function(){
 
 });
   
-
-// function myFunction(event) { 
-//   alert(event.target.index());
-//   ChooseStepPayTut();
-// }
-

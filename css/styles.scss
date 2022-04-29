@@ -227,10 +227,10 @@ main{
 //sử dụng trang home
 .home-banner{
     padding-top:120px;
-    background-image: url("/images/home/absoulute-bg-banner.png");
+    background-image: url("/images/home/absoulute-bg-banner.png"),url("/images/home/bg-banner-2.png");
     background-repeat: no-repeat;
-    background-position:2%;
-    background-size: 400px 400px;
+    background-position:2%,80% bottom;
+    background-size: 400px 400px,760px 580px;
     min-height: 662px;
     background-color: $primary-color;
     .text-banner{
@@ -260,38 +260,26 @@ main{
                 font-style: italic;
             }
             .cal-intro{
-                margin-top:40px;
                 .circle-item{
-                    width:120px;          
-                    .circle{
+                    svg{
                         display:block;
                         margin:0 auto;
-                        border-radius: 50%;
-                        background-color: #ffffff;
-                        width: 80px;
-                        height: 80px;
-                        position: relative;
-                        .circle-absolute{
-                            position: absolute;
-                            top:10%;
-                            left:10%;
-                            border-radius: 50%;
-                            height: 80%;
-                            width: 80%;
-                            background-color:#E12A41;
-                            z-index:1;
-                        }
-                        .circle-absolute-animation{
-                            position: absolute;
-                            top:10%;
-                            left:10%;
-                            border-radius: 50%;
-                            height: 80%;
-                            width: 80%;
-                            background-color:#ffffff;
-                            z-index:2;
-                        }
                     }
+                    width:120px;
+                    //cmt
+                    .background {
+                        fill: white;
+                    }
+            
+                    .line {
+                        fill: none;
+                        stroke-width: 25;
+                    }
+            
+                    .spinner{
+                        transform: rotate(90deg);
+                    }   
+                    //cmt      
                     h6{
                         font-style: italic;     
                         text-align: center;   
@@ -319,6 +307,7 @@ main{
         }
     }
     .bg-phone{
+        display:none;
         img{
             object-fit:contain;
             width: 100%;
@@ -659,6 +648,101 @@ main{
         }
     }  
 }
+.home-eco{
+    min-height: 500px;
+    background-color: #ffffff;
+    background-image: url(../images/home/bg-eco.png);
+    background-repeat: no-repeat;
+    background-position:bottom;
+    background-clip: border-box;
+    background-size: cover  ;
+    padding:60px 0;
+    h2{
+        text-align: center;
+        color:#333333;
+        font-weight: 800;
+        text-transform: uppercase;
+    }
+    .eco-statistical{
+        padding:20px 0;
+    }
+    .eco-statistical-item{
+        padding:20px 0;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        h5{
+            margin-top:20px;
+            font-size:50px;
+            font-weight: 800;
+            color:#E12A41;
+        }
+        h6{
+            font-size:18px;
+            color: #333333;
+            font-weight: 600;
+            line-height: 25px;
+            text-align: center;
+            width: 80%;
+        }
+    }
+}
+.home-contact-box{
+    position: relative;
+    background-image: url(../images/home/bg-contact.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-blend-mode: screen;
+    padding:60px 0;
+    background-color:#BF1D24;
+    min-height: 520px;
+    color:#ffffff;
+    h3{
+        font-size: 36px;
+        font-weight: 800;
+        text-align: center;
+    }
+    h4{
+        text-align: center;
+        font-weight: 400;
+        font-size: 24px;
+    }
+    form{
+        padding:20px 0;
+        width: 100%;
+        display:flex;
+        flex-wrap: wrap;
+        input{
+            background: #FFFFFF;
+            border-radius: 4px;
+            width: 100%;
+            margin-bottom: 20px;
+            border: none;
+            height: 50px;
+            padding: 5px 10px;
+            
+        }
+        button{
+            width: 100%;
+            background-color:#FFCA0F;
+            color:#333333;
+            font-size: 16px;
+            font-weight: 800;
+            height:52px;
+            border-radius: 8px;
+            border:none;
+        }
+    }
+    .img-contact-girl{
+        right:0;
+        bottom:0;
+        position: absolute;
+        img{
+            width:1000px;
+            height:auto;
+        }
+    }
+}
 footer{
     position: relative;
     min-height: 340px;
@@ -773,6 +857,14 @@ footer{
     font-size:14px;
     font-weight: 500;
 }
+@media screen and (max-width: 1800px) {
+    .home-banner{
+        background-image:none;
+    }
+    .bg-phone{
+        display:block !important;
+    }
+}
 @media screen and (max-width: 1199px) {
     .fixed{
         padding:0 16px;
@@ -789,6 +881,9 @@ footer{
     h2{
         padding:0 16px;
         width: 100% !important;
+    }
+    .home-contact-box{
+        padding:40px 16px;
     }
 }
 @media screen and (max-width: 991px) {
@@ -889,6 +984,12 @@ footer{
     }
 }
 @media screen and (max-width: 576px) {
+    .circle-item{
+        svg{
+            width: 80px !important;
+            height: 80px !important;
+        }
+    }
     .step{
         align-items: start !important;
     }
@@ -956,5 +1057,41 @@ footer{
 
     to {
          opacity: 1;
+    }
+}
+@keyframes rotate25 {
+    0% {
+        stroke-dasharray: 0px 79;
+    }
+
+    100% {
+        stroke-dasharray: 19.25px 79;
+    }
+}
+@keyframes rotate50 {
+    0% {
+        stroke-dasharray: 0px 79;
+    }
+
+    100% {
+        stroke-dasharray: 39px 79;
+    }
+}
+@keyframes rotate75 {
+    0% {
+        stroke-dasharray: 0px 79;
+    }
+
+    100% {
+        stroke-dasharray: 59px 79;
+    }
+}
+@keyframes rotate100 {
+    0% {
+        stroke-dasharray: 0px 79;
+    }
+
+    100% {
+        stroke-dasharray: 79px 79;
     }
 }

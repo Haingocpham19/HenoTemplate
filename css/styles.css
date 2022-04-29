@@ -167,10 +167,10 @@ main {
 
 .home-banner {
   padding-top: 120px;
-  background-image: url("/images/home/absoulute-bg-banner.png");
+  background-image: url("/images/home/absoulute-bg-banner.png"), url("/images/home/bg-banner-2.png");
   background-repeat: no-repeat;
-  background-position: 2%;
-  background-size: 400px 400px;
+  background-position: 2%,80% bottom;
+  background-size: 400px 400px,760px 580px;
   min-height: 662px;
   background-color: #E12A41; }
   .home-banner .text-banner {
@@ -191,41 +191,23 @@ main {
         font-size: 24px;
         font-weight: 600;
         font-style: italic; }
-      .home-banner .text-banner .banner-cal-intro .cal-intro {
-        margin-top: 40px; }
-        .home-banner .text-banner .banner-cal-intro .cal-intro .circle-item {
-          width: 120px; }
-          .home-banner .text-banner .banner-cal-intro .cal-intro .circle-item .circle {
-            display: block;
-            margin: 0 auto;
-            border-radius: 50%;
-            background-color: #ffffff;
-            width: 80px;
-            height: 80px;
-            position: relative; }
-            .home-banner .text-banner .banner-cal-intro .cal-intro .circle-item .circle .circle-absolute {
-              position: absolute;
-              top: 10%;
-              left: 10%;
-              border-radius: 50%;
-              height: 80%;
-              width: 80%;
-              background-color: #E12A41;
-              z-index: 1; }
-            .home-banner .text-banner .banner-cal-intro .cal-intro .circle-item .circle .circle-absolute-animation {
-              position: absolute;
-              top: 10%;
-              left: 10%;
-              border-radius: 50%;
-              height: 80%;
-              width: 80%;
-              background-color: #ffffff;
-              z-index: 2; }
-          .home-banner .text-banner .banner-cal-intro .cal-intro .circle-item h6 {
-            font-style: italic;
-            text-align: center;
-            font-size: 18px;
-            margin-top: 20px; }
+      .home-banner .text-banner .banner-cal-intro .cal-intro .circle-item {
+        width: 120px; }
+        .home-banner .text-banner .banner-cal-intro .cal-intro .circle-item svg {
+          display: block;
+          margin: 0 auto; }
+        .home-banner .text-banner .banner-cal-intro .cal-intro .circle-item .background {
+          fill: white; }
+        .home-banner .text-banner .banner-cal-intro .cal-intro .circle-item .line {
+          fill: none;
+          stroke-width: 25; }
+        .home-banner .text-banner .banner-cal-intro .cal-intro .circle-item .spinner {
+          transform: rotate(90deg); }
+        .home-banner .text-banner .banner-cal-intro .cal-intro .circle-item h6 {
+          font-style: italic;
+          text-align: center;
+          font-size: 18px;
+          margin-top: 20px; }
     .home-banner .text-banner .btn-trial-banner {
       height: 52px;
       width: 220px;
@@ -240,9 +222,11 @@ main {
       line-height: 52px;
       cursor: pointer;
       filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); }
-  .home-banner .bg-phone img {
-    object-fit: contain;
-    width: 100%; }
+  .home-banner .bg-phone {
+    display: none; }
+    .home-banner .bg-phone img {
+      object-fit: contain;
+      width: 100%; }
   .home-banner .btn-trial-mobile {
     display: none;
     height: 52px;
@@ -515,6 +499,88 @@ main {
         line-height: 44px;
         text-transform: uppercase; }
 
+.home-eco {
+  min-height: 500px;
+  background-color: #ffffff;
+  background-image: url(../images/home/bg-eco.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-clip: border-box;
+  background-size: cover;
+  padding: 60px 0; }
+  .home-eco h2 {
+    text-align: center;
+    color: #333333;
+    font-weight: 800;
+    text-transform: uppercase; }
+  .home-eco .eco-statistical {
+    padding: 20px 0; }
+  .home-eco .eco-statistical-item {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .home-eco .eco-statistical-item h5 {
+      margin-top: 20px;
+      font-size: 50px;
+      font-weight: 800;
+      color: #E12A41; }
+    .home-eco .eco-statistical-item h6 {
+      font-size: 18px;
+      color: #333333;
+      font-weight: 600;
+      line-height: 25px;
+      text-align: center;
+      width: 80%; }
+
+.home-contact-box {
+  position: relative;
+  background-image: url(../images/home/bg-contact.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-blend-mode: screen;
+  padding: 60px 0;
+  background-color: #BF1D24;
+  min-height: 520px;
+  color: #ffffff; }
+  .home-contact-box h3 {
+    font-size: 36px;
+    font-weight: 800;
+    text-align: center; }
+  .home-contact-box h4 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 24px; }
+  .home-contact-box form {
+    padding: 20px 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; }
+    .home-contact-box form input {
+      background: #FFFFFF;
+      border-radius: 4px;
+      width: 100%;
+      margin-bottom: 20px;
+      border: none;
+      height: 50px;
+      padding: 5px 10px; }
+    .home-contact-box form button {
+      width: 100%;
+      background-color: #FFCA0F;
+      color: #333333;
+      font-size: 16px;
+      font-weight: 800;
+      height: 52px;
+      border-radius: 8px;
+      border: none; }
+  .home-contact-box .img-contact-girl {
+    right: 0;
+    bottom: 0;
+    position: absolute; }
+    .home-contact-box .img-contact-girl img {
+      width: 1000px;
+      height: auto; }
+
 footer {
   position: relative;
   min-height: 340px;
@@ -593,6 +659,12 @@ footer {
   font-size: 14px;
   font-weight: 500; }
 
+@media screen and (max-width: 1800px) {
+  .home-banner {
+    background-image: none; }
+
+  .bg-phone {
+    display: block !important; } }
 @media screen and (max-width: 1199px) {
   .fixed {
     padding: 0 16px; }
@@ -608,7 +680,10 @@ footer {
 
   h2 {
     padding: 0 16px;
-    width: 100% !important; } }
+    width: 100% !important; }
+
+  .home-contact-box {
+    padding: 40px 16px; } }
 @media screen and (max-width: 991px) {
   header .h-r {
     display: none; }
@@ -675,6 +750,10 @@ footer {
       max-width: 100%;
       margin-bottom: 40px; } }
 @media screen and (max-width: 576px) {
+  .circle-item svg {
+    width: 80px !important;
+    height: 80px !important; }
+
   .step {
     align-items: start !important; }
 
@@ -722,5 +801,25 @@ footer {
     opacity: 0; }
   to {
     opacity: 1; } }
+@keyframes rotate25 {
+  0% {
+    stroke-dasharray: 0px 79; }
+  100% {
+    stroke-dasharray: 19.25px 79; } }
+@keyframes rotate50 {
+  0% {
+    stroke-dasharray: 0px 79; }
+  100% {
+    stroke-dasharray: 39px 79; } }
+@keyframes rotate75 {
+  0% {
+    stroke-dasharray: 0px 79; }
+  100% {
+    stroke-dasharray: 59px 79; } }
+@keyframes rotate100 {
+  0% {
+    stroke-dasharray: 0px 79; }
+  100% {
+    stroke-dasharray: 79px 79; } }
 
 /*# sourceMappingURL=styles.css.map */

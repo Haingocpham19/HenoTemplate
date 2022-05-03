@@ -170,7 +170,7 @@ main {
   background-image: url("/images/home/absoulute-bg-banner.png"), url("/images/home/bg-banner-2.png");
   background-repeat: no-repeat;
   background-position: 2%,80% bottom;
-  background-size: 400px 400px,760px 580px;
+  background-size: 400px 400px,850px 580px;
   min-height: 662px;
   background-color: #E12A41; }
   .home-banner .text-banner {
@@ -215,13 +215,16 @@ main {
       border-radius: 8px;
       display: block;
       margin: 50px auto;
-      color: #ffffff;
-      font-weight: 800;
-      font-size: 16px;
       text-align: center;
       line-height: 52px;
-      cursor: pointer;
       filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); }
+      .home-banner .text-banner .btn-trial-banner a {
+        color: #ffffff;
+        font-weight: 800;
+        font-size: 16px;
+        height: 100%; }
+      .home-banner .text-banner .btn-trial-banner a:hover {
+        color: #E12A41; }
   .home-banner .bg-phone {
     display: none; }
     .home-banner .bg-phone img {
@@ -285,6 +288,7 @@ main {
     font-weight: 800; }
 
 .home-stuff {
+  background-color: #F5F5F5;
   padding: 40px 16px; }
   .home-stuff h2 {
     display: block;
@@ -385,8 +389,25 @@ main {
   .home-service-hot .slick-dots li.slick-active button {
     background: #E12A41;
     border-radius: 12px; }
+  .home-service-hot .slick-prev {
+    background: #D9D9D9;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    left: -50px; }
+  .home-service-hot .slick-next {
+    background: #D9D9D9;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    right: -50px; }
+  .home-service-hot .slick-prev::before {
+    content: url("/images/home/chevron-left.png"); }
+  .home-service-hot .slick-next::before {
+    content: url("/images/home/chevron-right.png"); }
 
 .home-pay-tutorial {
+  background-color: #F5F5F5;
   padding: 60px 0; }
   .home-pay-tutorial h2 {
     font-size: 36px;
@@ -577,8 +598,12 @@ main {
     right: 0;
     bottom: 0;
     position: absolute; }
-    .home-contact-box .img-contact-girl img {
+    .home-contact-box .img-contact-girl .contact-girl-full {
       width: 1000px;
+      height: auto; }
+    .home-contact-box .img-contact-girl .contact-girl-cut {
+      display: none;
+      width: 760px;
       height: auto; }
 
 footer {
@@ -665,25 +690,18 @@ footer {
 
   .bg-phone {
     display: block !important; } }
+@media screen and (max-width: 1400px) {
+  .contact-girl-full {
+    display: none; }
+
+  .contact-girl-cut {
+    display: block !important; } }
 @media screen and (max-width: 1199px) {
-  .fixed {
-    padding: 0 16px; }
-
-  footer {
-    padding: 0 16px; }
-
-  .text-banner {
-    padding: 0 16px; }
-
-  .show-pay {
+  .inner {
     padding: 0 16px; }
 
   h2 {
-    padding: 0 16px;
-    width: 100% !important; }
-
-  .home-contact-box {
-    padding: 40px 16px; } }
+    width: 100% !important; } }
 @media screen and (max-width: 991px) {
   header .h-r {
     display: none; }
@@ -712,11 +730,13 @@ footer {
   .right-step {
     margin-top: 40px; }
     .right-step .tut-step {
-      margin-bottom: 20px; } }
-@media screen and (max-width: 767.98px) {
-  .footer-step-pay {
-    display: none !important; }
+      margin-bottom: 20px; }
 
+  .home-contact-box {
+    min-height: 460px !important; }
+    .home-contact-box .img-contact-girl {
+      display: none; } }
+@media screen and (max-width: 767.98px) {
   footer {
     padding-bottom: 20px; }
     footer .footer-detail {
@@ -730,8 +750,8 @@ footer {
         footer .footer-detail .footer-detail-r ul li {
           line-height: 30px; }
 
-  footer {
-    padding: 0 16px; }
+  .footer-step-pay {
+    display: none !important; }
 
   .h-i-left {
     display: none; }
@@ -748,12 +768,11 @@ footer {
       padding: 0 16px !important;
       display: block !important;
       max-width: 100%;
-      margin-bottom: 40px; } }
-@media screen and (max-width: 576px) {
-  .circle-item svg {
-    width: 80px !important;
-    height: 80px !important; }
+      margin-bottom: 40px; }
 
+  .home-contact-box {
+    background-image: none; } }
+@media screen and (max-width: 575px) {
   .step {
     align-items: start !important; }
 
@@ -775,6 +794,10 @@ footer {
     height: 44px !important; }
   .text-banner .banner-cal-intro h6 {
     font-size: 14px !important; }
+
+  .circle-item svg {
+    width: 80px !important;
+    height: 80px !important; }
 
   h2 {
     font-size: 28px !important;

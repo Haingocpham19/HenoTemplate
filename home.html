@@ -20,7 +20,11 @@
     <!-- Add the slick-theme.css if you want default styling -->
     <link rel="stylesheet" type="text/css"
         href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="/css/styles.css">
+    <!-- animation aos bay bay -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
     <title>HOME</title>
 </head>
@@ -106,7 +110,7 @@
     </header>
     <div class="home-banner">
         <div class="inner d-flex flex-wrap">
-            <div class="text-banner col-lg-7 col-12">
+            <div class="text-banner col-lg-7 col-12 animate__animated animate__bounce animate__fadeInLeft">
                 <b class="big-b">HENO</b><span class="text-normal"> - Giải pháp thanh toán trả sau dịch vụ chăm sóc
                     <b>SỨC KHỎE</b> và
                     <b>LÀM ĐẸP</b>
@@ -155,7 +159,7 @@
                     </div>
                 </div>
                 <div class="btn-trial-banner">
-                    DÙNG THỬ MIỄN PHÍ
+                    <a href="#">DÙNG THỬ MIỄN PHÍ</a>
                 </div>
             </div>
             <div class="bg-phone col-lg-5 col-12">
@@ -175,8 +179,8 @@
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         ></iframe>
                 </div>
-                <div class="col-md-6 col-12 h-i-right d-flex flex-column justify-content-between">
-                    <h2>THANH TOÁN TRẢ SAU ĐƠN GIẢN VỚI<span> HENO</span></h2>
+                <div data-aos="fade-left" class="col-md-6 col-12 h-i-right d-flex flex-column justify-content-between">
+                    <h2 >THANH TOÁN TRẢ SAU ĐƠN GIẢN VỚI<span> HENO</span></h2>
                     <iframe width="400" height="300" src="https://www.youtube.com/embed/_xsFKPJ6rFc"
                         title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -246,16 +250,18 @@
                     </div>
                 </div>
                 <div class="col-12">
-                    <button class="btn-advise">
-                        TƯ VẤN CHO TÔI
-                    </button>
+                    <a href="">
+                        <button class="btn-advise">
+                            TƯ VẤN CHO TÔI
+                        </button>
+                    </a>          
                 </div>
             </div>
         </div>
     </div>
     <div class="home-stuff">
         <div class="inner">
-            <h2>ÁP DỤNG THANH TOÁN TRẢ SAU TẠI CÁC NHÀ CUNG CẤP CỦA<span> HENO</span></h2>
+            <h2 data-aos="fade-up">ÁP DỤNG THANH TOÁN TRẢ SAU TẠI CÁC NHÀ CUNG CẤP CỦA<span> HENO</span></h2>
             <div class="d-flex justify-content-center flex-wrap">
                 <div class="col-md-3 col-12 stuff-item d-flex flex-column justify-content-center">
                     <img src="/images/home/stuff-1.png" alt="">
@@ -380,15 +386,15 @@
     </div>
     <div class="home-pay-tutorial">
         <div class="inner">
-            <h2><span>4 BƯỚC THANH TOÁN</span> TRẢ SAU NHANH CHÓNG QUA HENO</h2>
+            <h2 data-aos="fade-down"><span>4 BƯỚC THANH TOÁN</span> TRẢ SAU NHANH CHÓNG QUA HENO</h2>
             <div class="d-flex flex-wrap show-pay">
-                <div class="col-lg-6 col-12 img-step">
+                <div data-aos="fade-right" class="col-lg-6 col-12 img-step">
                     <img class="active" src="/images/home/bg-pay.png" alt="">
-                    <img src="https://i.pinimg.com/originals/c6/a3/8d/c6a38dc910d6cd90252f60b0a3af4b75.jpg">
-                    <img src="https://i.pinimg.com/originals/8c/55/1e/8c551e7c4fbef64a7eb2d25e32768739.jpg" alt="">
-                    <img src="https://i.pinimg.com/originals/c6/a3/8d/c6a38dc910d6cd90252f60b0a3af4b75.jpg">
+                    <img src="https://i.ibb.co/jMV5T3g/c6a38dc910d6cd90252f60b0a3af4b75-removebg-preview.png">
+                    <img src="https://i.ibb.co/bRBmn7z/8c551e7c4fbef64a7eb2d25e32768739-1-removebg-preview.png" alt="">
+                    <img src="https://i.ibb.co/jMV5T3g/c6a38dc910d6cd90252f60b0a3af4b75-removebg-preview.png">
                 </div>
-                <div class="col-lg-6 col-12 right-step d-flex justify-content-around flex-column">
+                <div data-aos="fade-left" class="col-lg-6 col-12 right-step d-flex justify-content-around flex-column">
                     <div class="tut-step active">
                         <div class="d-flex justify-content-start">
                             <div class="col-2">
@@ -460,26 +466,26 @@
     </div>
     <div class="home-eco">
         <div class="inner">
-            <h2>HỆ SINH THÁI HENO</h2>
-            <div class="eco-statistical d-flex justify-content-around flex-wrap">
+            <h2 data-aos="fade-up">HỆ SINH THÁI HENO</h2>
+            <div data-aos="fade-up" class="eco-statistical d-flex justify-content-around flex-wrap">
                 <div class="eco-statistical-item col-md-3 col-sm-6 col-12">
                     <img src="/images/home/eco-item-1.png" alt="">
-                    <h5>10.000+</h5>
+                    <h5  data-target="10000" data-count="0" class="count">0+</h5>
                     <h6>Khách hàng của Heno</h6>
                 </div>
                 <div class="eco-statistical-item col-md-3 col-sm-6 col-12">
                     <img src="/images/home/eco-item-2.png" alt="">
-                    <h5>1.2000+</h5>
+                    <h5 data-target="1200" data-count="0" class="count">0+</h5>
                     <h6>Giao dịch hàng tháng</h6>
                 </div>
                 <div class="eco-statistical-item col-md-3 col-sm-6 col-12">
                     <img src="/images/home/eco-item-3.png" alt="">
-                    <h5>20+</h5>
+                    <h5 data-target="20" data-count="0" class="countSlow">0+</h5>
                     <h6>Đối tác y tế & chăm sóc sức khỏe uy tín</h6>
                 </div>
                 <div class="eco-statistical-item col-md-3 col-sm-6 col-12">
                     <img src="/images/home/eco-item-4.png" alt="">
-                    <h5>50+</h5>
+                    <h5 data-target="50" data-count="0" class="countSlow">0+</h5>
                     <h6>Phòng khám & cơ sở cung cấp dịch vụ trên toàn quốc</h6>
                 </div>
             </div>
@@ -487,9 +493,11 @@
     </div>
     <div class="home-contact-box">
         <div class="inner">
-            <div class="col-md-6 col-12">
-                <h3>Chăm sóc sức khoẻ, sắc đẹp của bạn ngay hôm nay.</h3>
-                <h4>Hãy để lại liên lạc để chúng tôi tư vấn cho bạn</h4>
+            <div class="col-md-8 col-lg-6 col-12">
+                <div data-aos="fade-right">
+                    <h3>Chăm sóc sức khoẻ, sắc đẹp của bạn ngay hôm nay.</h3>
+                    <h4>Hãy để lại liên lạc để chúng tôi tư vấn cho bạn</h4>
+                </div>            
                 <form id="contact" action="#" method="post">
                     <div class="row">
                         <div class="col-sm-6 col-12 mbt10">
@@ -514,7 +522,8 @@
             </div>
         </div>   
         <div class="img-contact-girl">
-            <img src="/images/home/girl-contact.png" alt="">
+            <img class="contact-girl-full" src="/images/home/girl-contact.png" alt="">
+            <img class="contact-girl-cut" src="/images/home/girl-contact-cut.png" alt="">
         </div>
     </div>
     <footer>
@@ -654,6 +663,8 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- animation AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         $('.slider-service').slick({
             dots: true,
@@ -663,6 +674,12 @@
             slidesToShow: 6,
             slidesToScroll: 6,
             responsive: [
+                {
+                    breakpoint:1300,
+                    settings: {
+                        arrows:false
+                    }
+                },
                 {
                     breakpoint: 1200,
                     settings: {
@@ -706,25 +723,63 @@
         window.addEventListener('load', (event) => {
                 let style1 = {
                     'stroke': '#E12A41',
-                    'animation': 'rotate25 3s forwards',
+                    'animation': 'rotate25 2s forwards',
                 };
                 let style2 = {
                     'stroke': '#E12A41',
-                    'animation': 'rotate50 3s forwards',
+                    'animation': 'rotate50 2s forwards',
                 };
                 let style3 = {
                     'stroke': '#E12A41',
-                    'animation': 'rotate75 3s forwards',
+                    'animation': 'rotate75 2s forwards',
                 };
                 let style4 = {
                     'stroke': '#E12A41',
-                    'animation': 'rotate100 3s forwards',
+                    'animation': 'rotate100 2s forwards',
                 };
                 $('#circle1').css(style1);
                 $('#circle2').css(style2);
                 $('#circle3').css(style3);
                 $('#circle4').css(style4);
         });    
+    </script>
+    <script> 
+    Number.prototype.format = function (n) {
+        var r = new RegExp('\\d(?=(\\d{3})+' + (n > 0 ? '\\.' : '$') + ')', 'g');
+        return this.toFixed(Math.max(0, Math.floor(n))).replace(r, '$&.');
+    };
+    function IncreaseNumber(selectorString,speed) {
+        selectorString.forEach((counter) => {
+            const updateCount = () => {
+                const target = parseInt(counter.getAttribute('data-target'));
+                const count = parseInt(counter.getAttribute('data-count'));
+                const increment = Math.trunc(target / speed);
+                if (count < target) {
+                    let temp = count + increment;
+                    counter.setAttribute('data-count',temp)
+                    counter.innerText = temp.format() +"+";
+                    setTimeout(updateCount, 150);
+                } else {
+                    counter.setAttribute('data-count',target);
+                    counter.innerText = target.format() + "+";
+                }
+            };
+            updateCount();
+        });
+    }
+    $(window).scroll(function () {
+            const counters = document.querySelectorAll('.count');
+            const counterSlow = document.querySelectorAll('.countSlow');
+            let topPos = $(this).scrollTop();
+            let topIntro = $('.home-eco').position().top;
+            if(topIntro - topPos < 600){
+                IncreaseNumber(counters,150);
+                IncreaseNumber(counterSlow,18);
+            }
+        })
+    </script>
+    <script>
+        AOS.init();
     </script>
     <script src="/js/custom.js"></script>
 </body>

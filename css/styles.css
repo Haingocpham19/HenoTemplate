@@ -166,6 +166,7 @@ main {
   padding-right: 16px; }
 
 .home-banner {
+  overflow: hidden;
   padding-top: 120px;
   background-image: url("/images/home/absoulute-bg-banner.png"), url("/images/home/bg-banner-2.png");
   background-repeat: no-repeat;
@@ -184,6 +185,7 @@ main {
       font-weight: 600;
       font-size: 34px; }
     .home-banner .text-banner .banner-cal-intro {
+      width: 100%;
       color: #ffffff; }
       .home-banner .text-banner .banner-cal-intro .h-title {
         padding-top: 20px;
@@ -192,10 +194,7 @@ main {
         font-weight: 600;
         font-style: italic; }
       .home-banner .text-banner .banner-cal-intro .cal-intro .circle-item {
-        width: 120px; }
-        .home-banner .text-banner .banner-cal-intro .cal-intro .circle-item svg {
-          display: block;
-          margin: 0 auto; }
+        max-width: 120px; }
         .home-banner .text-banner .banner-cal-intro .cal-intro .circle-item .background {
           fill: white; }
         .home-banner .text-banner .banner-cal-intro .cal-intro .circle-item .line {
@@ -210,7 +209,7 @@ main {
           margin-top: 20px; }
     .home-banner .text-banner .btn-trial-banner {
       height: 52px;
-      width: 220px;
+      max-width: 220px;
       background: #EFBC08;
       border-radius: 8px;
       display: block;
@@ -228,12 +227,13 @@ main {
   .home-banner .bg-phone {
     display: none; }
     .home-banner .bg-phone img {
-      object-fit: contain;
+      display: block;
+      margin: 0 auto;
       width: 100%; }
   .home-banner .btn-trial-mobile {
     display: none;
     height: 52px;
-    width: 220px;
+    max-width: 220px;
     background: #EFBC08;
     border-radius: 8px;
     margin: 0px auto 40px auto;
@@ -246,6 +246,7 @@ main {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); }
 
 .home-intro {
+  overflow: hidden;
   background-color: #ffffff;
   background-image: url(/images/home/Background-hom-intro.jpg);
   background-position: bottom;
@@ -288,6 +289,7 @@ main {
     font-weight: 800; }
 
 .home-stuff {
+  overflow: hidden;
   background-color: #F5F5F5;
   padding: 40px 16px; }
   .home-stuff h2 {
@@ -328,6 +330,7 @@ main {
     border: 1px solid #E12A41; }
 
 .home-service-hot {
+  overflow: hidden;
   padding: 60px 0;
   background-color: #ffffff; }
   .home-service-hot h2 {
@@ -407,6 +410,7 @@ main {
     content: url("/images/home/chevron-right.png"); }
 
 .home-pay-tutorial {
+  overflow: hidden;
   background-color: #F5F5F5;
   padding: 60px 0; }
   .home-pay-tutorial h2 {
@@ -420,6 +424,7 @@ main {
     .home-pay-tutorial h2 span {
       color: #E12A41; }
   .home-pay-tutorial .img-step {
+    object-fit: contain;
     height: 468px; }
     .home-pay-tutorial .img-step img {
       max-height: 100%;
@@ -521,6 +526,7 @@ main {
         text-transform: uppercase; }
 
 .home-eco {
+  overflow: hidden;
   min-height: 500px;
   background-color: #ffffff;
   background-image: url(../images/home/bg-eco.png);
@@ -555,6 +561,7 @@ main {
       width: 80%; }
 
 .home-contact-box {
+  overflow: hidden;
   position: relative;
   background-image: url(../images/home/bg-contact.png);
   background-position: right;
@@ -605,6 +612,149 @@ main {
       display: none;
       width: 760px;
       height: auto; }
+
+.redriect {
+  padding: 20px 0; }
+
+.recruit-banner {
+  padding-top: 110px;
+  min-height: 328px;
+  background-image: url(../images/recruit/bg-banner.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center; }
+  .recruit-banner h2 {
+    padding-top: 40px;
+    font-size: 36px;
+    font-weight: 700;
+    color: #ffffff; }
+  .recruit-banner h2::after {
+    content: "";
+    border-bottom: 2px solid #ffffff; }
+
+.news-recruit {
+  background-color: #f8f8f8;
+  padding-bottom: 40px; }
+  .news-recruit h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 40px;
+    color: #333333;
+    font-weight: 800; }
+  .news-recruit .news-recruit-list .news-recruit-item {
+    padding: 15px;
+    background-color: #ffffff;
+    margin: 15px auto;
+    width: 360px;
+    height: 516px;
+    border: 1px solid #E0E0E0;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px; }
+  .news-recruit .news-recruit-list .news-recruit-item:hover {
+    transform: scale(1.01); }
+  .news-recruit .news-recruit-list .img-news-recruit {
+    width: 100%; }
+  .news-recruit .news-recruit-list h3 {
+    font-size: 20px;
+    font-weight: 800;
+    color: #000000; }
+  .news-recruit .news-recruit-list .count-employee {
+    font-size: 16px;
+    font-weight: 600; }
+  .news-recruit .news-recruit-list .create-date {
+    font-size: 12px;
+    color: #828282;
+    font-weight: 400; }
+    .news-recruit .news-recruit-list .create-date .create-by {
+      margin-left: 10px; }
+  .news-recruit .slick-dots li {
+    transition: all 0.5s ease-in-out;
+    width: 20px; }
+  .news-recruit .slick-dots {
+    display: flex;
+    justify-content: center;
+    bottom: -40px; }
+  .news-recruit .slick-dots li button:before {
+    display: block;
+    font-size: 0; }
+  .news-recruit .slick-dots li button {
+    border: 2px solid #E12A41;
+    background: #ffffff;
+    display: block;
+    margin: 0 auto;
+    transition: all 0.5s ease-in-out;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%; }
+  .news-recruit .slick-dots li.slick-active button {
+    background: #E12A41;
+    border-radius: 12px; }
+
+.recruit-register-job {
+  padding: 40px 0;
+  width: 100%;
+  min-height: 740px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #bb1f33;
+  background-image: url(../images/recruit/bg-register-form.png), url(/images/recruit/bg-register-form-2.png);
+  background-repeat: no-repeat;
+  background-position: left bottom,100% 100px;
+  background-size: 45% auto,300px auto; }
+  .recruit-register-job h2 {
+    font-size: 36px;
+    font-weight: 800; }
+  .recruit-register-job h6 {
+    font-size: 16px;
+    font-weight: 600; }
+  .recruit-register-job .box-register {
+    box-shadow: 0px 0px 6px #FFFFFF;
+    border-radius: 5px;
+    text-align: left;
+    padding: 20px;
+    min-height: 490px;
+    min-width: 80%;
+    max-width: 600px;
+    display: block;
+    margin: 20px auto;
+    background-color: #ffffff; }
+    .recruit-register-job .box-register label {
+      color: #424242;
+      font-weight: 600;
+      font-size: 16px; }
+    .recruit-register-job .box-register input {
+      background-color: #F4F4F4; }
+    .recruit-register-job .box-register form {
+      padding: 20px 0;
+      height: 100%; }
+    .recruit-register-job .box-register .custom-input-form {
+      width: 48%; }
+    .recruit-register-job .box-register .btn-submit {
+      border: none;
+      display: block;
+      margin: 30px auto 0 auto;
+      width: 154px;
+      height: 48px;
+      background-color: #E12A41;
+      color: #ffffff;
+      font-size: 16px;
+      border-radius: 8px; }
+    .recruit-register-job .box-register #inputGroupFile02 {
+      display: inline-block;
+      position: absolute;
+      z-index: 1;
+      width: 100%;
+      height: 50px;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      cursor: pointer; }
+    .recruit-register-job .box-register #browseBtn {
+      color: #ffffff;
+      background-color: #F9C307;
+      width: 76px;
+      height: 44px; }
 
 footer {
   position: relative;
@@ -771,7 +921,20 @@ footer {
       margin-bottom: 40px; }
 
   .home-contact-box {
-    background-image: none; } }
+    background-image: none; }
+
+  .text-banner .big-b {
+    font-size: 50px !important; }
+  .text-banner .text-normal {
+    font-size: 16px !important;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.45); }
+  .text-banner .banner-cal-intro .h-title {
+    font-size: 16px !important; }
+  .text-banner .banner-cal-intro h6 {
+    font-size: 14px !important; }
+
+  .box-register {
+    max-width: 400px !important; } }
 @media screen and (max-width: 575px) {
   .step {
     align-items: start !important; }
@@ -782,29 +945,28 @@ footer {
   .banner-introduction {
     height: 250px; }
 
-  .text-banner .big-b {
-    font-size: 50px !important; }
-  .text-banner .text-normal {
-    font-size: 16px !important;
-    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.45); }
-  .text-banner .banner-cal-intro .h-title {
-    font-size: 16px !important; }
-  .text-banner .banner-cal-intro .circle {
-    width: 44px !important;
-    height: 44px !important; }
-  .text-banner .banner-cal-intro h6 {
-    font-size: 14px !important; }
-
-  .circle-item svg {
-    width: 80px !important;
-    height: 80px !important; }
-
-  h2 {
+  .home-banner h2 {
     font-size: 28px !important;
     line-height: 42px; }
 
   .img-step {
-    height: 360px !important; } }
+    height: 360px !important; }
+
+  .circle-item {
+    max-width: 60px !important; }
+    .circle-item svg {
+      max-width: 60px !important;
+      max-height: 60px !important; }
+
+  .news-recruit-item {
+    width: 300px !important; }
+
+  .news-recruit h1 {
+    font-size: 28px !important; }
+
+  .custom-input-form {
+    margin-bottom: 20px;
+    width: 100% !important; } }
 @media screen and (max-width: 340px) {
   .banner-introduction {
     height: 200px; }
@@ -813,7 +975,11 @@ footer {
     font-size: 10px !important;
     line-height: 20px !important; }
   .text-content .tilte-content a {
-    font-size: 12px !important; } }
+    font-size: 12px !important; }
+
+  .news-recruit .news-recruit-item {
+    width: 250px !important;
+    height: 400px !important; } }
 @keyframes btnGetNow {
   0% {
     transform: scale(1, 1); }

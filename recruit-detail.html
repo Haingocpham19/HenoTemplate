@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"> -->
+
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!-- bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <!-- animation aos bay bay -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <title>Tuyen dung chi tiet</title>
+</head>
+<body>
+    <header class="fixed">
+        <div class="inner d-flex">
+            <div class="h-l col-md-2 col-sm-6 header-logo">
+                <a class="logo">
+                    <img src="/images/logo.png" alt="">
+                </a>
+            </div>
+            <div class="h-r col-md-10">
+                <div class="d-flex justify-content-end">
+                    <ul class="d-flex justify-content-between">
+                        <li>
+                            <a href="#" class="active">Hợp tác với HENO</a>
+                        </li>
+                        <li>
+                            <a href="#">Về HENO</a>
+                            <span>
+                                <svg width="12" height="6" viewBox="0 0 12 6" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.9335 0.682617H5.74182H1.06682C0.266823 0.682617 -0.133177 1.43914 0.43349 1.88262L4.75016 5.26088C5.44182 5.80218 6.56682 5.80218 7.25849 5.26088L8.90016 3.97609L11.5752 1.88262C12.1335 1.43914 11.7335 0.682617 10.9335 0.682617Z"
+                                        fill="#292D32" />
+                                </svg>
+                            </span>
+                        </li>
+                        <li>
+                            <a href="#">Cẩm nang</a>
+                        </li>
+                        <li>
+                            <a href="/contact.html">Liên Hệ</a>
+                        </li>
+                    </ul>
+                    <button class="register">Đăng ký</button>
+                    <button class="login">Đăng nhập</button>
+                </div>
+            </div>
+            <div class="menu-mobile">
+                <label for="nav-mobile-input" class="nav__bars-btn" id="btn-bars">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                        <path
+                            d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z" />
+                    </svg> </label>
+                <input type="checkbox" class="nav__input" id="nav-mobile-input">
+                <label for="nav-mobile-input" class="nav__overlay">
+                </label>
+                <div class="nav__mobile">
+                    <div class="nav_mobile_header d-flex justify-content-around">
+                        <img src="/images/logo.png">
+                        <label for="nav-mobile-input" class="pt-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                                class="bi bi-x" viewBox="0 0 16 16">
+                                <path
+                                    d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                            </svg>
+                        </label>
+                    </div>
+                    <ul class="nav__mobile-list">
+                        <li>
+                            <a href="" class="nav__mobile-link">Hợp tác với Heno</a>
+                        </li>
+                        <li>
+                            <a href="" class="nav__mobile-link">Về HENO</a>
+                        </li>
+                        <li>
+                            <a href="" class="nav__mobile-link">Cẩm nang</a>
+                        </li>
+                        <li>
+                            <a href="/contact.html" class="nav__mobile-link">Liên hệ</a>
+                        </li>
+                        <li class="pt-3">
+                            <button class="register">Đăng ký</button>
+                            <button class="login">Đăng nhập</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div style="padding-top:100px" class="inner">
+        <div class="redriect">
+            Trang chủ > Về HENO > Tuyển dụng
+        </div>  
+    </div> 
+    <main>
+        <div class="inner d-flex justify-content-between">
+            <div class="recruit-content col-md-8 col-lg-9 col-12">
+                <img src="/images/recruit/img-news-tuyendung-1.png" alt="">
+                <h1>
+                    Tuyển dụng HENO - Chuyên viên truyền thông Marketing
+                </h1>
+                <div class="info-content-detail">
+                    <div class="avt-author">
+                        <img src="/images/recruit/author-1.png" alt="">
+                    </div>
+                    <div class="name-author">
+                        Admin - <span class="create-date">19/02/21</span>
+                    </div>
+                </div>
+                <hr>
+                <div class="h-recruit-detail">
+                    <div class="detail-item d-flex">
+                        <img src="/images/recruit/id-card 1.png" alt="">
+                        <div class="detail">
+                            </b>Cấp bậc:<span>Chuyên viên - Toàn thời gian</span>
+                        </div>
+                    </div>
+                    <div class="detail-item d-flex">
+                        <img src="/images/recruit/id-card 1.png" alt="">
+                        <div class="detail">
+                            Mức lương:<span>Thỏa thuận</span>
+                        </div>
+                    </div>
+                    <div class="detail-item d-flex">
+                        <img src="/images/recruit/watch.png" alt="">
+                        <div class="detail">
+                            Thời gian làm việc:<span>8.30 – 18.00 từ Thứ 2 – Thứ 6, nghỉ trưa từ 12.00 – 13.30</span>
+                        </div>
+                    </div>
+                    <div class="detail-item d-flex">
+                        <img src="/images/recruit/map.png" alt="">
+                        <div class="detail">
+                            Địa điểm:<span>VP Orenda, 25 Tô Vĩnh Diện, Khương Trung, Thanh Xuân, Hà Nội</span>
+                        </div>
+                    </div>
+                    <div class="detail-item d-flex">
+                        <img src="/images/recruit/mail.png" alt="">
+                        <div class="detail">
+                            Email ứng tuyển:<span>contact@orenda.vn</span>
+                        </div>
+                    </div>
+                    <div class="detail-item d-flex">
+                        <img src="/images/recruit/mail.png" alt="">
+                        <div class="detail">
+                            Email hỗ trợ:<span>nguyethtm@orenda.vn (Ms. Nguyệt)</span>
+                        </div>
+                    </div>
+                    <div class="detail-item d-flex">
+                        <img src="/images/recruit/phone-call.png" alt="">
+                        <div class="detail">
+                            Điện thoại:<span>024 6254 3686</span>
+                        </div>
+                    </div>
+                    <div class="detail-item d-flex">
+                        <img src="/images/recruit/facebook.png" alt="">
+                        <div class="detail">
+                            Facebook:<span>https://www.facebook.com/OrendaCo/</span>
+                        </div>
+                    </div>
+                </div>
+                b-recruit-detail
+            </div>
+            <div class="col-md-4 col-lg-3 col-12 right-side">
+                <div class="input-group mb-3 search-inste">
+                    <input type="text" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="button"><i class="bi bi-search"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="recruit-hot">
+                      <div class="h-r-hot">
+                          <h2>BÀI VIẾT NỔI BẬT</h2>
+                      </div>
+                      <div class="r-h-list">
+                          <div class="r-h-item d-flex">
+                            <div class="col-4">
+                                <img src="/images/recruit/img-content-hot.png" alt="">
+                            </div>
+                            <div class="col-8 r-h-info d-flex flex-wrap justify-content-between">
+                                <div class="r-item-title col-12">
+                                    Tuyển dụng HENO Content Marketing
+                                </div>
+                                <div class="f-item-detail col-12">
+                                    Admin <span>20/04/2022</span>
+                                </div>
+                            </div>
+                          </div>  
+                          <div class="r-h-item d-flex">
+                            <div class="col-4">
+                                <img src="/images/recruit/img-content-hot.png" alt="">
+                            </div>
+                            <div class="col-8 r-h-info d-flex flex-wrap justify-content-between">
+                                <div class="r-item-title col-12">
+                                    Tuyển dụng HENO Content Marketing
+                                </div>
+                                <div class="f-item-detail col-12">
+                                    Admin <span>20/04/2022</span>
+                                </div>
+                            </div>
+                          </div>  
+                          <div class="r-h-item d-flex">
+                            <div class="col-4">
+                                <img src="/images/recruit/img-content-hot.png" alt="">
+                            </div>
+                            <div class="col-8 r-h-info d-flex flex-wrap justify-content-between">
+                                <div class="r-item-title col-12">
+                                    Tuyển dụng HENO Content Marketing
+                                </div>
+                                <div class="f-item-detail col-12">
+                                    Admin <span>20/04/2022</span>
+                                </div>
+                            </div>
+                          </div>  
+                          <div class="r-h-item d-flex">
+                            <div class="col-4">
+                                <img src="/images/recruit/img-content-hot.png" alt="">
+                            </div>
+                            <div class="col-8 r-h-info d-flex flex-wrap justify-content-between">
+                                <div class="r-item-title col-12">
+                                    Tuyển dụng HENO Content Marketing
+                                </div>
+                                <div class="f-item-detail col-12">
+                                    Admin <span>20/04/2022</span>
+                                </div>
+                            </div>
+                          </div>  
+                          <div class="r-h-item d-flex">
+                            <div class="col-4">
+                                <img src="/images/recruit/img-content-hot.png" alt="">
+                            </div>
+                            <div class="col-8 r-h-info d-flex flex-wrap justify-content-between">
+                                <div class="r-item-title col-12">
+                                    Tuyển dụng HENO Content Marketing
+                                </div>
+                                <div class="f-item-detail col-12">
+                                    Admin <span>20/04/2022</span>
+                                </div>
+                            </div>
+                          </div>                   
+                      </div>
+                </div>
+            </div>
+        </div>    
+    </main>
+    <footer>
+        <div class="inner">
+            <div class="lg-footer">
+                <img src="/images/logo.png" alt="lg-ft">
+            </div>
+            <div class="d-flex footer-detail">
+                <div class="col-md-6 col-12 d-flex footer-detail-l">
+                    <ul class="col-12 col-md-7">
+                        <div class="col-5 col-md-12">
+                            <li>
+                                <a href="#">Khách hàng</a>
+                            </li>
+                            <li>
+                                <a href="#">Đối tác Heno</a>
+                            </li>
+                            <li>
+                                <a href="#">Về chúng tôi</a>
+                            </li>
+                        </div>
+                        <div class="col-7 col-md-12">
+                            <li>
+                                <a href="#">Liên hệ và hỗ trợ</a>
+                            </li>
+                            <li>
+                                <a href="#">Điều kiện & Điều khoản</a>
+                            </li>
+                            <li>
+                                <a href="#">Chính sách quyền riêng tư</a>
+                            </li>
+                        </div>
+                    </ul>
+                    <ul class="col-12 col-md-5">
+                        <li class="d-block">
+                            <div class="col-12">
+                                Hỗ trợ nhà cung cấp
+                            </div>
+                            <div class="col-12 link-mail">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M2.66665 2.66666H13.3333C14.0666 2.66666 14.6666 3.26666 14.6666 3.99999V12C14.6666 12.7333 14.0666 13.3333 13.3333 13.3333H2.66665C1.93331 13.3333 1.33331 12.7333 1.33331 12V3.99999C1.33331 3.26666 1.93331 2.66666 2.66665 2.66666Z"
+                                        stroke="#4F4F4F" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M14.6666 4L7.99998 8.66667L1.33331 4" stroke="#4F4F4F" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <a href="#"> conntact@heno.vn</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-12 footer-detail-r">
+                    <div class="h-ft-r">
+                        CÔNG TY CỔ PHẦN CÔNG NGHỆ HEALTHCARE NOW
+                    </div>
+                    <ul>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.66666 6H13.3333" stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M2.66666 10H13.3333" stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M6.66668 2L5.33334 14" stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M10.6667 2L9.33334 14" stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            MST: 0109823770
+                        </li>
+                        <li>
+                            <svg width="16" height="18" viewBox="0 0 16 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M14 7.66666C14 12.3333 8 16.3333 8 16.3333C8 16.3333 2 12.3333 2 7.66666C2 4.35295 4.68629 1.66666 8 1.66666C11.3137 1.66666 14 4.35295 14 7.66666V7.66666Z"
+                                    stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M8 9.66666C9.10457 9.66666 10 8.77123 10 7.66666C10 6.56209 9.10457 5.66666 8 5.66666C6.89543 5.66666 6 6.56209 6 7.66666C6 8.77123 6.89543 9.66666 8 9.66666Z"
+                                    stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            B-TT6-1 Khu nhà ở Him Lam Vạn Phúc, P.Vạn Phúc, Q. Hà Đông, TP.Hà Nội
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M2 6.00001L8 1.33334L14 6.00001V13.3333C14 14.0697 13.403 14.6667 12.6667 14.6667H3.33333C2.59695 14.6667 2 14.0697 2 13.3333V6.00001Z"
+                                    stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M6 14.6667V8H10V14.6667" stroke="black" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            Toà 3D Center, số 3 Duy Tân, Cầu Giấy, Hà Nội
+                        </li>
+                        <li>
+                            <ul class="d-flex justify-content-start list-social">
+                                <li>
+                                    <a href="#">
+                                        <i class="bi bi-facebook"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="bi bi-youtube"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="bi bi-linkedin"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="bi bi-instagram"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="action">
+        <div class="back-on-top d-flex justify-content-center" id="back-to-top">
+            <img src="/images/back to top.png" alt="">
+        </div>
+        <div class="support-mes">
+            <img src="/images/support.png" alt="">
+        </div>
+    </div>
+    <div class="coppy-right">
+        Copyright 2021 Healthcare Now | Đã đăng ký bản quyền
+    </div>
+    <!-- slicker -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- animation AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="/js/custom.js"></script>
+</body>
+
+</html>

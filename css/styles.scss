@@ -49,7 +49,7 @@ a:hover {
 }
 
 h1 {
-    padding: 20px 0;
+    padding: 10px 0;
     font-family: "Nunito", sans-serif;
     font-weight: 800;
 }
@@ -220,10 +220,6 @@ header {
         }
     }
 }
-main{
-    padding-left:16px;
-    padding-right: 16px;
-}
 //sử dụng trang home
 .home-banner{
     overflow:hidden;
@@ -343,33 +339,63 @@ main{
     .inner{
         padding:40px 0;
     }
-    .h-i-left{
-        iframe{
-            max-width:100%;
-        }
-    }
-    .h-i-right{
-        padding:0 20px;
-        margin-bottom: 40px;
-        h2{
-            font-size:36px;
-            font-weight: 800;
-            span{
-                color:#E12A41;
+    
+    .h-i-left {
+        .box {
+            padding-top: 56.25%;
+            width: 100%;
+            position: relative;
+
+            embed {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border: 0;
             }
         }
-        iframe{
-            display:none;
+    }
+
+    .h-i-right {
+        padding: 0 20px;
+        margin-bottom: 40px;
+
+        h2 {
+            font-size: 36px;
+            font-weight: 800;
+
+            span {
+                color: #E12A41;
+            }
         }
-        .h-i-section{
+
+        .box-right {
+            display: none;
+            padding-top: 56.25%;
+            width: 100%;
+            position: relative;
+
+            embed {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border: 0;
+            }
+        }
+
+        .h-i-section {
             padding-bottom: 20px;
         }
-        .h-i-item{
-            font-size:16px;
+
+        .h-i-item {
+            font-size: 16px;
             font-weight: 600;
-            color:#4F4F4F;
-            margin-top:20px;
-        }  
+            color: #4F4F4F;
+            margin-top: 20px;
+        }
     }
     .btn-advise{
         width:200px;
@@ -965,6 +991,140 @@ main{
         }
     }
 }
+//tuyen dung chi tiet
+.recruit-content {
+    img{
+        width: 100%;
+        height:auto;
+    }  
+    h1{
+        font-size:36px;
+        font-weight: 700;
+    }
+    .info-content-detail {
+        display: flex;
+        .avt-author {
+            border-radius: 50%;
+            background-color: #FFD1D1;
+            color: #E12A41;
+            width: 24px;
+            height: 24px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 14px;
+            text-transform: uppercase;
+            line-height: 24px;
+
+            img {
+                border-radius: 50%;
+                border: 1px solid #e0e0e0;
+                height: 100%;
+                width: 100%;
+            }
+        }
+
+        .name-author {
+            text-transform: capitalize;
+            display: flex;
+            align-items: end;
+            margin-left: 10px;
+            color: #828282;
+            font-weight: 500;
+
+            .create-date {
+                margin: 0 5px;
+            }
+        }
+
+        .space {
+            margin: 0 10px;
+        }
+
+        .count-cmt {
+            a {
+                color: #2F80ED;
+            }
+        }
+    }
+    .detail-item{
+        padding-bottom: 20px;
+        img{
+            margin-right: 10px;
+            height:20px;
+            width: 20px;
+        }
+        .detail{
+            font-weight: 700;
+            font-size:16px;
+            span{
+                margin-left:5px;
+                font-weight: 400;
+            }
+        }
+    }
+}
+.right-side{
+    padding-left: 20px;
+    .search-insite{
+        border:none;
+        background: #FFFFFF;
+        border: 1px solid #E0E0E0;
+        border-radius: 10px;
+        
+    }
+    button{
+        background:#E12A41;
+        .bi-search{
+            color:#ffffff;
+        }
+    }
+    .form-control:focus {
+        color: #212529;
+        background-color: #fff;
+        border-color: #E12A41;
+        outline: 0;
+        box-shadow: none;
+    }
+    .recruit-hot{
+        width: 100%;
+        height:auto;
+        background: #FFFFFF;
+        border: 1px solid #E0E0E0;
+        border-radius: 8px;
+        .h-r-hot{
+            border-bottom: 1px solid #E0E0E0;
+        }
+        h2{
+            font-size:18px;
+            font-weight: 700;
+            padding:10px 10px 0 10px;
+        }
+        .r-h-list{
+            padding:10px;
+        }
+        .r-h-item{
+            margin-bottom: 20px;
+            width: 100%;
+            img{
+                border-radius: 8px;
+                width: 100%;
+                max-height: 100px;
+            }
+        }
+        .r-item-title{
+            font-size:16px;
+            font-weight: 600;
+        }
+        .r-h-info{
+            padding-left: 10px;
+        }
+        .f-item-detail{
+            font-size:14px;
+            font-weight: 400;
+            color:#828282;
+        }
+    }
+}
 footer{
     position: relative;
     min-height: 340px;
@@ -1197,22 +1357,29 @@ footer{
     .footer-step-pay{
         display:none !important;
     }
-    .h-i-left{
-        display:none;
+    .h-i-left {
+        display: none;
     }
-    .h-i-right{
-        padding:0 !important;
-        h2{
-            text-align:center;
+
+    .h-i-right {
+        padding: 0 !important;
+
+        h2 {
+            text-align: center;
             margin-bottom: 20px;
         }
-        iframe{
-            padding:0 16px !important;
-            display:block !important;
-            max-width:100%;
+
+        .box-right {
+            display: block !important;
+        }
+
+        embed {
+            padding: 0 16px !important;
+            max-width: 100%;
             margin-bottom: 40px;
         }
-        display:flex;
+
+        display: flex;
         flex-direction: column;
         align-items: center;
     }
@@ -1245,7 +1412,7 @@ footer{
     .step{
         align-items: start !important;
     }
-    iframe{
+    embed{
         max-height: 200px !important;
     }
     .banner-introduction{

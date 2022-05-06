@@ -1079,8 +1079,10 @@ footer {
     font-size: 28px !important; }
 
   .custom-input-form {
-    margin-bottom: 20px;
-    width: 100% !important; } }
+    width: 100% !important; }
+
+  .custom-input-form:first-child {
+    margin-bottom: 20px; } }
 @media screen and (max-width: 340px) {
   .banner-introduction {
     height: 200px; }

@@ -1444,8 +1444,10 @@ footer{
         }
     }
     .custom-input-form{
-        margin-bottom: 20px;
         width: 100% !important;
+    }
+    .custom-input-form:first-child{
+        margin-bottom: 20px;
     }
     
 }

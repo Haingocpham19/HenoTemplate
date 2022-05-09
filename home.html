@@ -25,6 +25,10 @@
     <!-- animation aos bay bay -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+    <!-- sweet alert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+
     <title>HOME</title>
 </head>
 
@@ -90,7 +94,16 @@
                             <a href="" class="nav__mobile-link">Hợp tác với Heno</a>
                         </li>
                         <li>
-                            <a href="" class="nav__mobile-link">Về HENO</a>
+                            <div class="header-menu-sub">
+                                <div>
+                                    <a href="" class="nav__mobile-link">Về HENO</a>
+                                </div>
+                                <div><i class="bi bi-caret-down-fill" id="btn-menu-sub-mobile"></i></div>
+                            </div>
+                            <ul class="menu-sub">
+                                <li><a href="">Giới thiệu</a></li>
+                                <li><a href="">Tuyển dụng</a></li>
+                            </ul>
                         </li>
                         <li>
                             <a href="" class="nav__mobile-link">Cẩm nang</a>
@@ -501,7 +514,7 @@
                     <h3>Chăm sóc sức khoẻ, sắc đẹp của bạn ngay hôm nay.</h3>
                     <h4>Hãy để lại liên lạc để chúng tôi tư vấn cho bạn</h4>
                 </div>            
-                <form id="contact" action="#" method="post">
+                <form id="contact" method="get">
                     <div class="row">
                         <div class="col-sm-6 col-12 mbt10">
                             <input type="text" placeholder="Họ và tên" name="FullName">
@@ -516,7 +529,7 @@
                             <input type="text" placeholder="Dịch vụ quan tâm" name="ServiceCare">
                         </div>
                         <div class="col-12 text-center">
-                            <button type="submit">
+                            <button id="btn-Consulting" type="submit">
                                 Nhận tư vấn ngay
                             </button>
                         </div>
@@ -785,6 +798,17 @@
         AOS.init();
     </script>
     <script src="/js/custom.js"></script>
+    <script>
+        document.querySelector('#btn-menu-sub-mobile').addEventListener('click', function(evt){
+            var target = evt.target;
+            if(document.querySelector('.menu-sub').style.display=="none"){
+                document.querySelector('.menu-sub').style.display = 'block';
+            }else{
+                document.querySelector('.menu-sub').style.display = 'none';
+            }
+            console.log(target);
+        })
+    </script>
 </body>
 
 </html>

@@ -34,6 +34,5 @@ $(document).ready(function(){
       $('.img-step img').removeClass('active');
       document.querySelectorAll('.img-step img')[index].className = 'active';
   })
-
 });
   

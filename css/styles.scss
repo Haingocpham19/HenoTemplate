@@ -304,15 +304,17 @@ header {
             text-align: center;
             line-height: 52px;
             filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-            a{
-                color:#ffffff;
-                font-weight: 800;
-                font-size:16px;
-                height:100%;
-            }
+        
+            color:#ffffff;
+            font-weight: 700;
+            font-size:16px;
+            
             a:hover{
                 color:#E12A41;
             }
+        }
+        .btn-trial-banner:hover{
+            opacity: 0.9;
         }
     }
     .bg-phone{
@@ -1199,6 +1201,7 @@ header {
 }
 //sử dụng cho trang liên hệ
 .contact{
+    position: relative;
     padding-top:110px;
     background-image: url(../images/background-contact.png);
     background-position: 160px 120px;
@@ -1206,76 +1209,95 @@ header {
     min-height: 600;
     background-color: #F8F8F8;
     .inner{
-        padding:40px 0;
-        .info-contact{
-            padding-right: 20px;
-            h2{
-                font-weight: 800;
-                font-size: 24px;
-                color:#E12A41;
-                margin-bottom:40px;
-            }
-            ul{
-                font-size: 16px;
-                line-height:22px;
-                li{
-                    margin-bottom: 20px;
-                    svg{
-                        margin-right: 10px;
-                    }
-                    ul{
-                        margin-left:5px;
-                        li{
-                            margin-bottom: 5px;
-                        }
+        padding: 40px 0;
+        margin-bottom: 60px;
+    }
+    .info-contact{
+        padding-right: 20px;
+        h2{
+            font-weight: 800;
+            font-size: 24px;
+            color:#E12A41;
+            margin-bottom:40px;
+        }
+        ul{
+            font-size: 16px;
+            line-height:22px;
+            li{
+                margin-bottom: 20px;
+                svg{
+                    margin-right: 10px;
+                }
+                ul{
+                    margin-left:5px;
+                    li{
+                        margin-bottom: 5px;
                     }
                 }
             }
         }
-        .box-contact{
+        .contact-now{
+            margin:40px 0;
+            color:#ffffff;
             display:block;
-            margin:auto;
-            max-width: 520px;
-            max-height: 416px;
-            background: #FFFFFF;
-            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+            width:245px;
+            height:52px;
+            background: #E12A41;
             border-radius: 8px;
-            form{
-                padding:20px 0;
-                width: 100%;
-                input{
-                    border: 1px solid #E0E0E0;
-                    padding-left: 10px;
-                    color:#828282;
-                    height:40px;
-                    display:block;
-                    width: 80%;
-                    margin:0 auto;
-                    margin-top:20px;
-                }
-                input:last-child{
-                    width: 30%;
-                    background-color:#E12A41;
-                    font-size: 14px;
-                    color:#ffffff;
-                    font-weight: 600;
-                    border-radius: 4px;
-                    margin-bottom: 20px;
-                }
+            text-transform: uppercase;
+            font-weight: 800;
+            font-size: 16px;
+            line-height:52px;
+            text-align: center;
+        }
+    }
+    .box-contact{
+        display:block;
+        margin:auto;
+        max-width: 520px;
+        max-height: 416px;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+        border-radius: 8px;
+        form{
+            padding:20px 0;
+            width: 100%;
+            input{
+                border: 1px solid #E0E0E0;
+                padding-left: 10px;
+                color:#828282;
+                height:40px;
+                display:block;
+                width: 80%;
+                margin:0 auto;
+                margin-top:20px;
+            }
+            input:last-child{
+                width: 30%;
+                background-color:#E12A41;
+                font-size: 14px;
+                color:#ffffff;
+                font-weight: 600;
+                border-radius: 4px;
+                margin-bottom: 20px;
             }
         }
     }
-   
-}
-.map{
-    width: 100%;
-    .inner{
-        padding: 20px 0;
+    .map{
+        position:absolute;
+        width: 50%;
+        height:438px;
+        embed{
+            border:1px solid #E0E0E0;
+        }
         h3{
             font-weight: 800;
+            margin-bottom: 40px;
         }
+        
     }
 }
+
 .banner-introduction{
     width: 100%;
     padding-top: 110px;
@@ -1339,10 +1361,12 @@ header {
 //su dung trang hop tac
 .cooperate-banner{
     background-image:url(/images/cooperate/bg-banner.png);
+    background-color:#F8F8F8;
     min-height: 535px;
     background-repeat: no-repeat;
+    background-size: contain;
     background-position: right;
-    background-blend-mode: screen;
+    background-blend-mode:overlay;
     .text-banner-cooperate{
         padding:60px 0;   
         span{
@@ -1371,6 +1395,9 @@ header {
                 color:#ffffff;
             }
         }
+    }
+    img{
+        width: 100%;
     }
 }
 .cooperate-benefit{
@@ -1467,12 +1494,71 @@ header {
             justify-content:center;
         }
         .fix-frame-slide{
+            padding:20px 16px;
             display:block;
             margin:0 auto;
             width: 360px;
             height: 447px;
             background: #FFFFFF;
             border-radius: 20px;
+            h6{
+                margin-top:20px;
+                font-weight: 400;
+                font-size: 16px;
+                color: #333333;
+                text-align: center; 
+            }
+            h4{
+                font-weight: 800;
+                font-size: 24px;
+                text-align: center;
+                height:60px;
+            }
+            .doghnutChartGroup {
+                margin: 10px;
+            }  
+            .doghnutChartGroup .circular-progress {
+                background: linear-gradient(90deg, #E0E0E0 50%, transparent 50%, transparent), linear-gradient(126deg, #E12A41 50%, #E0E0E0 50%, #E0E0E0);
+                border-radius: 50%;
+                box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+                height: 200px;
+                margin: 2em auto;
+                position: relative;
+                min-width: 200px;
+                margin: 10px;
+                transition: background .5s 0.3s;
+            }
+        
+                .doghnutChartGroup .circular-progress::before {
+                    background-color: #FAFAFA;
+                    border-radius: 50%;
+                    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+                    color: rgba(0, 0, 0, 0.54);
+                    content: attr(data-text);
+                    font-size: 72px;
+                    font-weight: bold;
+                    height: 100%;
+                    left: 0;
+                    line-height: 200px;
+                    position: absolute;
+                    text-align: center;
+                    top: 0;
+                    -webkit-transform: scale(0.87);
+                    transform: scale(0.87);
+                    width: 100%;
+                }
+        
+                .doghnutChartGroup .circular-progress:hover {
+                    box-shadow: 0 0 100px 1px rgba(255, 214, 112, 0.35);
+                }
+        
+            .doghnutChartGroup .circular-text {
+                text-align: center;
+                color: rgba(0, 0, 0, 0.6);
+                font-size: 14px;
+                font-weight: bold;
+                letter-spacing: 1px;
+            }
         }
     }
 }

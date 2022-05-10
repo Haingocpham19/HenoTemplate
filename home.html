@@ -173,7 +173,7 @@
                     </div>
                 </div>
                 <div class="btn-trial-banner">
-                    <a href="#">DÙNG THỬ MIỄN PHÍ</a>
+                    DÙNG THỬ MIỄN PHÍ
                 </div>
             </div>
             <div class="bg-phone col-12 col-lg-5 ">
@@ -809,6 +809,15 @@
                 document.querySelector('.menu-sub').style.display = 'none';
             }
             console.log(target);
+        })
+    </script>
+    <!-- scroll to contact box -->
+    <script>
+        document.querySelector('.btn-trial-banner').addEventListener('click',function(){
+            document.querySelector('.home-contact-box').scrollIntoView();
+        })
+        document.querySelector('.btn-trial-mobile').addEventListener('click',function(){
+            document.querySelector('.home-contact-box').scrollIntoView();
         })
     </script>
 </body>

@@ -115,7 +115,7 @@
         </div>  
     </div> 
     <div class="cooperate-banner">
-        <div class="inner">
+        <div class="inner d-flex">
             <div class="col-md-6 col-12 text-banner-cooperate">
                 <h2><span>Bùng nổ</span> doanh số của bạn với<span> HENO</span> </h2>
                 <h4>
@@ -190,18 +190,30 @@
             <h2>kết quả từ đối tác của heno</h2>
             <div class="slider-result-partner">
                 <div class="slider-item">
-                    <div class="fix-frame-slide">
-                        
+                    <div class="fix-frame-slide d-flex flex-column align-items-center">
+                        <h4>Tăng giá trị đơn hàng</h4>
+                        <div class="doghnutChartGroup displayInlineBlock">
+                            <div class="circular-progress" data-percent="0" data-text="30%"></div>
+                        </div>
+                        <h6>Giá trị trung bình trên một đơn hàng (AOV) tăng 30% khi khách hàng được lựa chọn dịch vụ BNPL</h6>
                     </div>
                 </div>
                 <div class="slider-item">
-                    <div class="fix-frame-slide">
-                        
+                    <div class="fix-frame-slide d-flex flex-column align-items-center">
+                        <h4>Tiếp cận khách hàng tiềm năng mới</h4>
+                        <div class="doghnutChartGroup displayInlineBlock">
+                            <div class="circular-progress" data-percent="0" data-text="39%"></div>
+                        </div>
+                        <h6>Số lượng khách hàng mới tăng trung bình 39% sau khi trở thành đối tác của HENO</h6>
                     </div>
                 </div>
                 <div class="slider-item">
-                    <div class="fix-frame-slide">
-                        
+                    <div class="fix-frame-slide d-flex flex-column align-items-center">
+                        <h4>Tăng tỷ lệ chuyển đổi đơn hàng thành công</h4>
+                        <div class="doghnutChartGroup displayInlineBlock">
+                            <div class="circular-progress" data-percent="0" data-text="80%"></div>
+                        </div>
+                        <h6>Trên 80% khách hàng đã lựa chọn BNPL của đối tác sẽ tiếp tục sử dụng các dịch vụ khác trong tương lai</h6>
                     </div>
                 </div>
             </div>
@@ -442,6 +454,43 @@
                 IncreaseNumber(counterSlow,18);
             }
         })
+    </script>
+    <script>
+    // Draw Circle dashboard
+    var doghnutCharts = document.querySelectorAll('.doghnutChartGroup .circular-progress');
+    function Stuff(index){
+        var percent = doghnutCharts[index].getAttribute('data-percent');
+            console.log(percent);
+            var degree = 90 + ( ( 360 / 100 ) * Number(percent) );
+            console.log(degree);
+
+            if (percent > 0 && percent <= 25) {
+                doghnutCharts[index].style.background = 'linear-gradient(90deg, #E0E0E0 50%, transparent 50%, transparent), linear-gradient(' + degree + 'deg , #E12A41 50%, #E0E0E0 50%, #E0E0E0)';
+            } else if (percent > 25 && percent <= 50) {
+                doghnutCharts[index].style.background = 'linear-gradient(90deg, #E0E0E0 50%, transparent 50%, transparent), linear-gradient(' + degree + 'deg , #E12A41 50%, #E0E0E0 50%, #E0E0E0)';
+            } else if (percent > 50 && percent <= 75) {
+                doghnutCharts[index].style.background = 'linear-gradient(-90deg, #E12A41 50%, transparent 50%, transparent), linear-gradient(' + degree + 'deg , #E12A41 50%, #E0E0E0 50%, #E0E0E0)';
+            } else if (percent > 75 && percent <= 100) {
+                doghnutCharts[index].style.background = 'linear-gradient(-90deg, #E12A41 50%, transparent 50%, transparent), linear-gradient(' + degree + 'deg , #E12A41 50%, #E0E0E0 50%, #E0E0E0)';
+            } else {
+                doghnutCharts[index].style.background = 'linear-gradient(90deg, #E0E0E0 50%, transparent 50%, transparent), linear-gradient(90deg , #FF70A6 50%, #E0E0E0 50%, #E0E0E0)';
+            }
+    }
+    function IncreateAnimationCircle(number,index){
+        for (var i = 0; i < number;i++){
+            var temp = doghnutCharts[index].getAttribute('data-percent');
+            doghnutCharts[index].setAttribute('data-percent',parseInt(temp) +1);
+        
+            // setTimeout(Stuff(index),1000);
+            //doghnutCharts[h].style.background = 'linear-gradient(90deg, #E0E0E0 50%, transparent 50%, transparent), linear-gradient(' + degree + 'deg , #FF70A6 50%, #E0E0E0 50%, #E0E0E0)';
+            console.log(doghnutCharts[index].style.background);
+        }
+    }
+
+    IncreateAnimationCircle(30,0);
+    IncreateAnimationCircle(39,1);
+    IncreateAnimationCircle(80,2); 
+
     </script>
 </body>
 

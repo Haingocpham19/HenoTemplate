@@ -37,27 +37,27 @@ function topFunction() {
 //   })
 // });
 
-function AutoRunStep(index){
-    let num = document.querySelector('#currentNumberStep').value;
-    if(num<3){
-      document.querySelector('#currentNumberStep').value = parseInt(num)+1;
-      document.querySelectorAll('.tut-step')[index].classList.remove('active');
-      document.querySelectorAll('.img-step img')[index].className = ""; 
-      document.querySelectorAll('.tut-step')[index+1].className = "tut-step active";
-      document.querySelectorAll('.img-step img')[index+1].className = "active";    
-    }
-    else{
-      document.querySelector('#currentNumberStep').value = parseInt(0);
-      debugger;
-      document.querySelectorAll('.tut-step')[index].classList.remove('active');
-      document.querySelectorAll('.img-step img')[index].className = ""; 
-      document.querySelectorAll('.tut-step')[0].className = "tut-step active";
-      document.querySelectorAll('.img-step img')[0].className = "active";  
-    }
-}
-window.onload=function(){
-  setInterval(function() {
-    let temp = document.querySelector('#currentNumberStep').value;
-    AutoRunStep(parseInt(temp));
-  }, 5000);
-};
+// function AutoRunStep(index){
+//     let num = document.querySelector('#currentNumberStep').value;
+//     if(num<3){
+//       document.querySelector('#currentNumberStep').value = parseInt(num)+1;
+//       document.querySelectorAll('.tut-step')[index].classList.remove('active');
+//       document.querySelectorAll('.img-step img')[index].className = ""; 
+//       document.querySelectorAll('.tut-step')[index+1].className = "tut-step active";
+//       document.querySelectorAll('.img-step img')[index+1].className = "active";    
+//     }
+//     else{
+//       document.querySelector('#currentNumberStep').value = parseInt(0);
+//       debugger;
+//       document.querySelectorAll('.tut-step')[index].classList.remove('active');
+//       document.querySelectorAll('.img-step img')[index].className = ""; 
+//       document.querySelectorAll('.tut-step')[0].className = "tut-step active";
+//       document.querySelectorAll('.img-step img')[0].className = "active";  
+//     }
+// }
+// window.onload=function(){
+//   setInterval(function() {
+//     let temp = document.querySelector('#currentNumberStep').value;
+//     AutoRunStep(parseInt(temp));
+//   }, 5000);
+// };

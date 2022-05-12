@@ -1302,66 +1302,6 @@ header {
     }
 }
 
-.banner-introduction{
-    width: 100%;
-    padding-top: 110px;
-    height:452px;
-    background-color: $primary-color;
-    .inner{
-        height: 100%;
-        img{
-            margin:0 auto;
-            display:block;
-            object-fit: contain;
-            max-height: 100%;
-        }
-    }
-}
-.general-information{
-    padding:40px 0;
-    background-color: #ffffff;
-    font-size:18px;
-    line-height: 27px;
-    font-weight: 400;
-    h2{
-        font-size: 36px;
-        font-weight: 800;
-        color:$primary-color;
-        text-transform: uppercase !important;
-    }
-    hr{
-        width: 50px;
-        border:2px solid $primary-color;
-        border-radius: 8px;
-        opacity: 1 !important;
-    }
-    .g-info-l{
-        padding-right: 18px;
-    }
-
-}
-.map-location{
-    max-height: 930px;
-    .location{
-        position: relative;
-        width: fit-content !important;
-        height:fit-content !important;
-        // position: relative;
-        // height: 930px;
-        // background-image: url(/images/map-frame.png);
-        // background-repeat: no-repeat;
-        // background-position: center;
-        // background-size: contain;
-        .map-frame{
-            width: 100%;
-        }
-        .location-1{
-            position:absolute;
-            top:10px;
-            left:10px;
-        }
-    }
-}
 //su dung trang hop tac
 .cooperate-banner{
     min-height: 535px;
@@ -1653,6 +1593,195 @@ header {
         }
     }
 }
+//trang gioi thieu
+.introduction-banner{
+    background-color: #E12A41;
+    min-height: 100px;
+    max-height: 450px;
+    width: auto;
+    img{
+        max-height:450px;
+        display:block;
+        margin:0 auto;
+        width: auto;
+    }
+}
+.introduction-info-ger{
+    background-color: #ffffff;
+    h2{
+        font-size: 36px;
+        font-weight: 800;
+        color: #E12A41;
+        position: relative;
+    }
+    h2::after{
+        content: "";
+        width: 100px;
+        left:0;
+        bottom:-5px;
+        position:absolute;
+        border-bottom:4px solid #E12A41;
+    }   
+    .content{
+        padding:20px 20px 20px 0;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 27px;
+        span{
+            font-weight: 700;
+        }
+    }
+    .box {
+        padding-top: 56.25%;
+        width: 100%;
+        position: relative;
+
+        embed {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+    }
+}
+.introduction-map-stuff{
+    padding:40px 0;
+    background-color: #F5F6FA;
+    .frame-map{
+        position: relative;
+        .location-1{
+            left:25%;
+            top:3%;
+            position:absolute;
+        }
+        .location-2{
+            left:10%;
+            top:5%;
+            position:absolute;
+        }
+        .location-3{
+            left:20%;
+            top:20%;
+            position:absolute;
+        }
+        .location-4{
+            left:23%;
+            top:20%;
+            position:absolute;
+        }
+        .location-5{
+            left:38%;
+            top:35%;
+            position:absolute;
+        }
+        .location-6{
+            left:50%;
+            top:50%;
+            position:absolute;
+        }
+        .location-7{
+            z-index: 2;
+            left:35%;
+            top:65%;
+            position:absolute;
+        }
+        .location-8{
+            z-index: 1;
+            left:43%;
+            top:68%;
+            position:absolute;
+        }
+        .location-9{
+            left:50%;
+            top:70%;
+            position:absolute;
+        }
+        .location-10{
+            left:23%;
+            top:78%;
+            position:absolute;
+        }
+    }
+    .main-map{
+        height:100%;
+        width: 100%;
+    }
+    
+    .slogan{
+        padding:80px 20px;
+        .slogan-item{
+            background-color: #ffffff;
+            margin-bottom: 40px;
+            padding:40px;
+            max-width: 556px;
+            height: 255px;
+            border: 1.5px solid #E12A41;
+            border-radius: 20px;
+            h3{
+                padding-top:25px;
+                text-align: center;
+                font-weight: 800;
+                font-size: 36px;
+                color: #E12A41;        
+            }
+            h6{
+                padding-top:10px;
+                text-align: center;
+                font-weight: 600;
+                font-size: 20px;
+            }
+        }
+    }
+}
+.introduction-core-values{
+    background-color: #f8f8f8;
+    padding:40px 0;
+    h2{
+        font-weight: 800;
+        font-size: 36px;
+        color: #E12A41;
+        text-align: center;
+        padding:20px 0;
+    }
+    .core-value-list{
+        .core-value-item{
+            transition:0.3s ease-in-out;
+            cursor: pointer;
+            margin:10px;
+            height:524px;
+            width: 360px;
+            background: #FFFFFF;
+            border: 1px dashed #BEBEBE;
+            border-radius: 24px;
+            padding:60px 20px;
+            display:flex;
+            flex-direction: column;
+            align-items:center;
+            .img-frame{
+                height: 240px;
+            }
+            img{
+                width: 100%;
+                height:auto;
+            }
+            h3{
+                padding:20px 0;
+                font-weight: 800;
+                font-size: 24px;
+            }
+            h5{
+                font-weight: 600;
+                font-size: 16px;
+                color: #4F4F4F;
+            }
+        }
+        .core-value-item:hover{
+            transform: scale(1.01);
+        }
+    }
+}
 footer{
     position: relative;
     min-height: 340px;
@@ -1784,21 +1913,6 @@ footer{
     }
 }
 @media screen and (max-width: 1199px) {
-    // .fixed{
-    //     padding:0 16px;
-    // }
-    // footer{
-    //     padding:0 16px;
-    // }
-    // .text-banner{
-    //     padding:0 16px;
-    // }
-    // .show-pay{
-    //     padding:0 16px;
-    // }
-    // .home-contact-box{
-    //     padding:40px 16px;
-    // }
     .inner{
         padding:0 16px;
     }
@@ -1809,6 +1923,17 @@ footer{
     .cooperate-banner{
         background-image:none;
     }  
+    .introduction-banner{
+        img{
+            width: 100% !important;
+        }
+    }
+    //gioi thieu
+    .frame-map{
+        img:not(img:first-child){
+            width: auto;
+        }
+    }
 }
 @media screen and (max-width: 991px) {
     header {
@@ -1960,7 +2085,7 @@ footer{
     .recruit-hashtag{
         display:none !important;
     }
-
+    
 }
 @media screen and (max-width: 575px) {
     .step{
@@ -2066,7 +2191,42 @@ footer{
     .result-from-partner{
         background-image: none;
     }
-}
+     //gioi thieu
+     .introduction-info-ger h2{
+         font-size: 28px !important;
+     }
+     .frame-map{
+        img:not(img:first-child,.location-7,.location-1){
+            max-width: 30px !important;
+            height:auto !important;
+        }
+        .location-1{
+            top:6% !important;
+            max-width: 40px !important;
+        }
+        .location-7{
+            top: 68% !important;
+            max-width: 40px !important;
+        }
+    }
+    .introduction-map-stuff{
+        padding:0;
+        .slogan{
+            padding:0;
+            .slogan-item{
+                h3{
+                    font-size:28px !important;
+                }
+                height:200px;
+                padding:10px;
+            }
+        }
+    }
+    .introduction-core-values{
+        padding:20p 0;
+    }
+}  
+
 @media screen and (max-width:340px){
     .banner-introduction{
         height: 200px;

@@ -1461,6 +1461,14 @@ footer {
           background: -webkit-linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d, #f56040, #f77737, #fcaf45, #ffdc80);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent; }
+  footer .footer-sdt {
+    font-weight: 400; }
+  footer .footer-center li {
+    padding: 20px; }
+    footer .footer-center li div:last-child {
+      font-weight: 400; }
+  footer .footer-center li:first-child {
+    padding-left: 0; }
 
 .action {
   position: fixed;

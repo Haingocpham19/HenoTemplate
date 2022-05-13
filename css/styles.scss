@@ -1875,7 +1875,20 @@ footer{
             }
         }
     }   
-  
+    .footer-sdt{
+        font-weight: 400;
+    }
+    .footer-center{
+        li{
+            padding:20px;
+            div:last-child{
+                font-weight: 400;
+            }
+        }
+        li:first-child{
+            padding-left: 0;
+        }
+    }
 }
 .action{
     position:fixed;
